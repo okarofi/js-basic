@@ -108,7 +108,11 @@ Add a method called `greet` inside `person` object that returns:
 Then call it.
 
 ```javascript
-// your code here
+person.greet = function (){
+    return `Hi, my name is ${this.name}`;
+};
+
+console.log(person.greet());
 ```
 
 ---
