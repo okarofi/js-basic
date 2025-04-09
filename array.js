@@ -17,4 +17,4 @@ console.log(fruits.includes("Banana"));
 
 console.log(fruits.indexOf("Orange"));
 
-console.log(fruits.join(", "));
+console.log(fruits.join(","));
