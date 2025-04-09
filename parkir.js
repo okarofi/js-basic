@@ -1,9 +1,9 @@
-
 function calculateParkingFee(vehicleType, duration){
 
     let firstHourPrice = 0;
     let nextHourPrice = 0;
     let extraCharge = 0;
+    const oneDay = 24;
 
     if (vehicleType === "car"){
         firstHourPrice = 5000;
@@ -25,7 +25,7 @@ function calculateParkingFee(vehicleType, duration){
         totalPrice = firstHourPrice + (duration - 1) * nextHourPrice;
     }
     
-    if (duration > 24) {
+    if (duration > oneDay) {
         totalPrice += extraCharge;
     }
     
